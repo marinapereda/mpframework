@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url(reset.css);
 @import url(colors.css);
 @charset "UTF-8";
 
-/*************************************************************************** 
-  MP Contents, Headlines & Paragraphs
-****************************************************************************/
+
+
 	body{
 		font-size: 15px;
 		line-height: 1.45em;
 	}
 	p, span, a, ul, li, ol, h1, h2, h3, h4, h5, h6, button, div, section, article{
-		font-family: 'Chivo', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	}
 	p{
 		margin: 0 0 15px;
 		line-height: 1.65em;
-		font-family: 'Chivo', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		color: var(--mp-primary-dark-color);
 	}
 	p:only-child, p:only-of-type{
@@ -1839,3 +1838,32 @@ MP Custom Backgrounds & Borders
 		}
 
 	}
+
+
+
+
+
+		/* Extra small devices (phones, less than 600px) */
+		@media only screen and (max-width: 600px) {
+			/* CSS rules for extra small devices here */
+		}
+	
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			/* CSS rules for small devices here */
+		}
+	
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+			/* CSS rules for medium devices here */
+		}
+	
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			/* CSS rules for large devices here */
+		}
+	
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+			/* CSS rules for extra large devices here */
+		}
