@@ -1,25 +1,32 @@
 {
-	"name": "mpframework",
-	"version": "1.0.0",
-	"description": "A Lightweight CSS & JS Framework for your web projects",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mowglymx/mpframework.git"
-	},
-	"keywords": [
-		"CSS Framework",
-		"CSS JS Framework"
-	],
-	"author": "Marina Pereda",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/mowglymx/mpframework/issues"
-	},
-	"homepage": "https://github.com/mowglymx/mpframework#readme",
-	"dependencies": {
-		"package-name": "^1.0.0"
-	},
-	"devDependencies": {
-		"dev-package-name": "^1.0.0"
-	}
+  "name": "mpframework",
+  "version": "1.0.0",
+  "description": "A Lightweight CSS & JS Framework for your web projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowglymx/mpframework.git"
+  },
+  "keywords": [
+    "CSS Framework",
+    "CSS JS Framework"
+  ],
+  "author": "Marina Pereda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mowglymx/mpframework/issues"
+  },
+  "homepage": "https://github.com/mowglymx/mpframework#readme",
+  "dependencies": {
+    "package-name": "^1.0.0"
+  },
+  "devDependencies": {
+    "dev-package-name": "^1.0.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

@@ -7,42 +7,461 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Enter your description here">
-    <meta name="keywords" content="Enter your keywords here">
-    <meta name="author" content="Enter your name here">
+    <meta name="keywords" content="css framework, js framework, frontend framework, web frontend framework, web framework">
+    <meta name="author" content="Marina Pereda">
 
     <!-- For IOS Web Apps -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Microsoft Meta Tags -->
-    <meta name="msapplication-navbutton-color" content="#000">
-    <meta name="msapplication-TileColor" content="#000">
-    <meta name="theme-color" content="#000">
-
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font: Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
 
-    <title>Your Title</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../src/css/mp-colors.css">
+    <link rel="stylesheet" href="../src/css/mp-framework.css">
+
+    <title>mpframework</title>
 </head>
+
 <body>
 
     <header>
-        <!-- Your site's header -->
-    </header>
-    
-    <main>
-        <!-- Your site's main content -->
-    </main>
 
-    <footer>
-        <!-- Your site's footer -->
+        <div class="mp-container">
+
+            <div class="mp-row mp-row-v-middle">
+
+                <div class="mp-col mp-col-3">
+
+                    <div class="logo mp-flex">
+                        <img src="https://placehold.co/280x40/f1f1f1/b2b2b2.png?font=open-sans&text=MP Framework" alt="MP Framework Logo" />
+                    </div>
+
+                </div>
+
+                <div class="mp-col mp-col-9">
+
+                    <!-- Top Menu -->
+                    <nav>
+
+                        <ul class="mp-col-v-bottom">
+
+                            <li>
+                                <a href="#intro">Intro</a>
+                            </li>
+                            <li>
+                                <a href="#section">Section</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="hero" class="mp-row-h-center mp-slider">
+
+        <div class="mp-slider-bg"></div>
+		
+		<div class="mp-slider-controls">
+			<span class="mp-control-prev">
+			</span>
+			<span class="mp-control-next">
+			</span>
+		</div><!-- /mp-slider-controls -->
+
+		<div class="mp-container">
+			
+			<div class="mp-slider-navigation"><ul></ul></div>
+
+			<div class="mp-slider-single slider-center visible">
+
+				<div class="mp-row mp-wrap mp-row-v-middle">
+
+                    <img class="mp-slider-img" src="https://images.unsplash.com/photo-1598740717606-47a84c14d27f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Image 1" />
+
+                    <div class="mp-slider-content">
+
+                        <div class="slide-title">mpframework</div>
+
+                        <div class="slide-subtitle">Css & JS Framework</div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a turpis eget mi facilisis congue. Nam tincidunt urna vitae nulla gravida, sit amet ornare nunc hendrerit. Pellentesque semper quam tincidunt malesuada pellentesque.</p>
+
+                    </div>
+
+				</div>
+
+			</div>
+
+            <div class="mp-slider-single slider-center">
+
+				<div class="mp-row mp-wrap mp-row-v-middle">
+
+                    <img class="mp-slider-img" src="https://images.unsplash.com/photo-1562008928-6185cc645f76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="Image 2" />
+
+                    <div class="mp-slider-content">
+
+                        <div class="slide-title">mpframework</div>
+
+                        <div class="slide-subtitle">Css & JS Framework</div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a turpis eget mi facilisis congue. Nam tincidunt urna vitae nulla gravida, sit amet ornare nunc hendrerit. Pellentesque semper quam tincidunt malesuada pellentesque.</p>
+
+                    </div>
+
+				</div>
+
+			</div>
+
+		</div><!-- /mp-container -->
+
+    </section>
+    
+    <!-- Intro Section -->
+    <section id="intro" class="mp-p-v-40">
+
+        <div class="mp-container">
+
+            <div class="mp-row">
+        
+                <div class="mp-col mp-col-12">
+
+                    <h2 class="mp-text-center">Subtitle</h2>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row">
+        
+                <div class="mp-col mp-col-4">
+                    <h3>Column 1</h3>
+                    <p>This is the first column of the intro section.</p>
+                </div>
+
+               <div class="mp-col mp-col-4">
+                    <h3>Column 2</h3>
+                    <p>This is the second column of the intro section.</p>
+                </div>
+
+                <div class="mp-col mp-col-4">
+                    <h3>Column 3</h3>
+                    <p>This is the third column of the intro section.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section with 2 columns -->
+    <section id="grid" class="mp-p-v-40">
+
+        <div class="mp-container">
+
+            <h2>Grid System</h2>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">Col</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-12 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-12</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-11 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-11</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-1 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-1</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-10 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-10</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-2 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-2</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-9 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-9</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-3 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-3</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-8 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-8</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-4 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-4</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-7 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-7</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-5 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-5</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-6 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-6</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-6 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-6</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-5 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-5</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-7 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-7</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-4 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-4</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-8 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-8</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-3 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-3</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-9 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-9</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-2 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-2</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-10 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-10</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-1 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-1</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-11 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-11</p>
+
+                </div>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-12 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-12</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mp-container">
+        
+            <h2>Responsive Grid System</h2>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-p-5 mp-col mp-col-12 mp-col-md-1 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-1</p>
+
+                </div>
+
+                <div class="mp-p-5 mp-col mp-col-12 mp-col-md-11 mp-primary-bg-color mp-border-radius-8">
+
+                    <p class="mp-primary-light-color">.mp-col-11</p>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="mp-container">
+
+            <div class="mp-row mp-m-vb-20">
+
+                <h2>Hide on Responsive</h2>
+
+            </div>
+
+            <div class="mp-row mp-m-vb-10">
+
+                <div class="mp-col mp-col-12">
+                    <p>.mp-hide-sm</p>
+                    <p>.mp-hide-md</p>
+                    <p>.mp-hide-lg</p>
+                </div>
+
+                <div class="mp-col mp-hide-sm">
+
+                    <p>Hide on Small Screens</p>
+                    
+                </div>
+
+                <div class="mp-col mp-hide-md">
+
+                    <p>Hide on Large Screens</p>
+                    
+                </div>
+
+                <div class="mp-col mp-hide-lg">
+
+                    <p>Hide on Extra Large Screens</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="mp-p-20">
+
+        <div class="mp-container">
+
+            <div class="mp-row mp-row-h-center">
+
+                <p class="mp-text-center">MP Framework</p>
+
+            </div>
+
+        </div>
+
     </footer>
 
     <!-- JavaScript Files -->
-    <script src="main.js"></script>
+    <script type="module" src="../src/js/mp-framework.js"></script>
+
 	 
 </body>
 </html>

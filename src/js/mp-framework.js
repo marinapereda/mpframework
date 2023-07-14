@@ -2,95 +2,16 @@
   MP Slider
 ****************************************************************************/
 
-function setupSlider(slider) {
-
-	let slides = Array.from(slider.querySelectorAll('.mp-slider-single'));
-	let index = slides.findIndex(slide => slide.classList.contains('visible'));
-	let controls = {
-		prev: slider.querySelector('.mp-control-prev'),
-		next: slider.querySelector('.mp-control-next')
-	};
-	let bg = slider.querySelector('.mp-slider-bg');
-	let autoplayDelay = slider.getAttribute('data-autoplay-delay') || 3000;
-	let autoplayId = null;
-	let navigation = slider.querySelector('.mp-slider-navigation ul');
-
-	// Remove existing navigation items
-	while (navigation.firstChild) {
-		navigation.firstChild.remove();
-	}
-
-	// Create navigation items for each slide
-	slides.forEach((slide, slideIndex) => {
-		let navItem = document.createElement('li');
-		navItem.addEventListener('click', () => goToSlide(slideIndex));
-		navigation.appendChild(navItem);
-	});
-
-	function autoplay() {
-		autoplayId = setInterval(function () {
-			goToSlide((index + 1) % slides.length);
-		}, autoplayDelay);
-	}
-
-	function stopAutoplay() {
-		if (autoplayId !== null) {
-			clearInterval(autoplayId);
-			autoplayId = null;
-		}
-	}
-
-	function goToSlide(newIndex) {
-		
-		slides[index].classList.remove('visible');
-		slides[newIndex].classList.add('visible');
-		let newImg = slides[newIndex].querySelector('.mp-slider-img').cloneNode();
-
-		while (bg.firstChild) {
-			bg.firstChild.remove();
-		}
-
-		bg.appendChild(newImg);
-		index = newIndex;
-
-		// Update navigation items
-		Array.from(navigation.children).forEach((navItem, i) => {
-			if (i === index) {
-				navItem.classList.add('active');
-			} else {
-				navItem.classList.remove('active');
-			}
-		});
-	}
-
-	controls.prev.addEventListener('click', function () {
-		goToSlide((index - 1 + slides.length) % slides.length);
-	});
-
-	controls.next.addEventListener('click', function () {
-		goToSlide((index + 1) % slides.length);
-	});
-
-	slider.addEventListener('mouseover', stopAutoplay);
-	slider.addEventListener('mouseout', autoplay);
-
-	autoplay();
-
-	// Initially highlight the navigation item for the visible slide
-	goToSlide(index);
-}
+import { MpSlider } from './mp-slider.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.mp-slider').forEach(setupSlider);
+    new MpSlider('.mp-slider');
 });
-
 
 
 /*************************************************************************** 
   MP Carousel
 ****************************************************************************/
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
 

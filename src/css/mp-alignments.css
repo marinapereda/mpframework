@@ -1,0 +1,77 @@
+/*** Center Div ***/
+
+.mp-div-center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*** Center Text ***/
+
+.mp-text-center {
+	text-align: center;
+}
+
+/*** Horizontal Alignment for Rows ***/
+
+.mp-row-h-center {
+	justify-content: center;
+}
+
+.mp-row-h-right {
+	justify-content: end;
+}
+
+.mp-row-h-left {
+	justify-content: start;
+}
+
+.mp-row-h-between {
+	justify-content: space-between;
+}
+
+.mp-row-h-around {
+	justify-content: space-around;
+}
+
+/*** Vertical Alignment for Rows ***/
+
+.mp-row-v-middle {
+	align-items: center;
+}
+
+.mp-row-v-bottom {
+	align-items: end;
+}
+
+.mp-row-v-top {
+	align-items: start;
+}
+
+/*** Horizontal Alignment for Columns ***/
+
+.mp-col-h-center {
+	align-content: center;
+}
+
+.mp-col-h-right {
+	align-items: end;
+}
+
+.mp-col-h-left {
+	align-items: start;
+}
+
+/*** Vertical Alignment for Columns ***/
+
+.mp-col-v-middle {
+	justify-content: center;
+}
+
+.mp-col-v-bottom {
+	justify-content: end;
+}
+
+.mp-col-v-top {
+	justify-content: start;
+}

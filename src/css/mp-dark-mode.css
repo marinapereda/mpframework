@@ -1,0 +1,32 @@
+/*** Dark Mode */
+.dark-mode,
+[dark-mode],
+[color-scheme="dark"] {
+	color-scheme: dark;
+
+	--bgColor: #000;
+	--color: #FFF;
+	--colorInverse: #000;
+	--hColor: var(--color);
+
+	--inputBg: #181818;
+	--inputBgHover: var(--inputBg);
+	--inputBgActive: var(--inputBg);
+	--inputBorderColor: #333;
+	--inputBorderHover: #444;
+	--inputActive: var(--primary);
+	--inputColor: var(--color);
+	--inputPlaceholderColor: rgba(255, 255, 255, .4);
+
+	--buttonBorderColor: transparent;
+	--buttonBorderHover: transparent;
+
+	--selectionBg: rgba(255, 255, 255, .99);
+	--selectionText: #000;
+
+	--codeColor: var(--green);
+	--codeBg: #111;
+
+	--hrColor: var(--inputBorderColor);
+	--hrGradient: rgba(0, 0, 0, 0);
+}
