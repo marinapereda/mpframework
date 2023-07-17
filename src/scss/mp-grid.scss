@@ -143,7 +143,7 @@ body,
 }
 
 .mp-col-12 {
-	flex: 0 0 calc((100% / (12/12)) - ($mp-gutter/2));
+	flex: 0 0 calc((100% / (12/12)) - $mp-gutter);
 	max-width: calc(100% / (12/12));
 }
 
