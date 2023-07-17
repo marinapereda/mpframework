@@ -1,0 +1,32 @@
+.mp-badge {
+	padding: .2em .4em;
+	display: inline-block;
+	font-size: .85em;
+	line-height: 1em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	color: var(--mp-primary-dark-color);
+	vertical-align: text-bottom;
+	background-color: var(--mp-primary-color);
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.mp-badge.mp-badge-secondary {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-color);
+}
+
+.mp-badge.mp-badge-primary-dark {
+	color: var(--mp-primary-light-color);
+	background-color: var(--mp-primary-dark-color);
+}
+
+.mp-badge.mp-badge-primary-light {
+	color: var(--mp-secondary-dark-color);
+	background-color: var(--mp-primary-light-color);
+}

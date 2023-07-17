@@ -1,0 +1,29 @@
+.mp-card {
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.mp-card-icon {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.mp-card-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.mp-card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.mp-card-footer {
+	display: flex;
+	flex-direction: column;
+}

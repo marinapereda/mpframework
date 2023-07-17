@@ -1,0 +1,271 @@
+.mp-button,
+.mp-button:visited {
+	padding: 6px 18px;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	text-align: center;
+	text-decoration: none;
+	color: $color-light-primary;
+	cursor: pointer;
+	pointer-events: visible;
+	background-color: $color-primary;
+	border: 0;
+	border-radius: 35px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	-o-border-radius: 35px;
+
+	transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+}
+
+.mp-button:hover,
+.mp-button:focus {
+	opacity: .8;
+	transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+}
+
+.mp-button-no-border {
+	border: 0 !important;
+}
+
+.mp-inline-link {
+	display: inline-flex;
+	text-decoration: underline;
+}
+
+/*** Button Sizes ***/
+
+.mp-button-sm {
+	padding: 4px 10px;
+	font-size: .8em;
+}
+
+.mp-button-lg {
+	padding: 12px 26px;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-radius: 65px;
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	-o-border-radius: 65px;
+}
+
+.mp-button-xlg{
+	padding: 12px 26px;
+	font-size: 2em;
+	font-weight: 600;
+	border-radius: 65px;
+	-webkit-border-radius: 65px;
+	-moz-border-radius: 65px;
+	-o-border-radius: 65px;
+}
+
+/*** Button Holders ***/
+
+.mp-button-holder {
+	display: inline-block;
+}
+
+.mp-div-center .mp-button-holder {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*** Button with Icon ***/
+
+.mp-button i {
+	display: inline-block;
+}
+
+.mp-button-i-right i {
+	margin-left: 6px;
+}
+
+.mp-button-i-left i {
+	margin-left: 0;
+	margin-right: 6px;
+}
+
+.mp-button-icon{
+	padding: 6px 32px 6px 18px;
+}
+
+.mp-button-icon::after{
+	content: "\e911";
+	position: absolute;
+	top: 6px;
+	right: 12px;
+	font-family: 'mp-icons' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mp-button-icon.mp-button-icon-add::after{
+	content: "\e900";
+}
+
+.mp-button-icon.mp-button-icon-minus::after{
+	content: "\e910";
+}
+
+.mp-button-icon.mp-button-icon-close::after{
+	content: "\e90a";
+}
+
+.mp-button-icon.mp-button-icon-check::after{
+	content: "\e909";
+}
+
+/*** Secondary Color ***/
+
+.mp-button-secondary,
+.mp-button-secondary:visited {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-color);
+}
+
+.mp-button-secondary:hover,
+.mp-button-secondary:focus {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-color-hover);
+}
+
+/*** Primary Dark Color ***/
+
+.mp-button-primary-dark,
+.mp-button-primary-dark:visited {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-dark-color);
+}
+
+.mp-button-primary-dark:hover,
+.mp-button-primary-dark:focus {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-dark-color-hover);
+}
+
+/*** Secondary Dark Color ***/
+
+.mp-button-secondary-dark,
+.mp-button-secondary-dark:visited {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-dark-color);
+}
+
+.mp-button-secondary-dark:hover,
+.mp-button-secondary-dark:focus {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-dark-color-hover);
+}
+
+/*** Primary Light Color ***/
+
+.mp-button-primary-light,
+.mp-button-primary-light:visited {
+	color: var(--mp-primary-dark-color);
+	background-color: var(--mp-primary-light-color);
+}
+
+.mp-button-primary-light:hover,
+.mp-button-primary-light:focus {
+	color: var(--mp-primary-dark-color);
+	background-color: var(--mp-primary-light-color-hover);
+}
+
+/*** Secondary Light Color ***/
+
+.mp-button-secondary-light,
+.mp-button-secondary-light:visited {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-light-color);
+}
+
+.mp-button-secondary-light:hover,
+.mp-button-secondary-light:focus {
+	color: var(--mp-secondary-light-color);
+	background-color: var(--mp-secondary-light-color-hover);
+}
+
+/*** Outline Button ***/
+
+.mp-button-outline {
+	color: var(--mp-primary-color);
+	background-color: transparent;
+	border: 1px solid var(--mp-primary-color);
+}
+
+.mp-button-outline,
+.mp-button-outline:visited,
+.mp-button-primary-outline,
+.mp-button-primary-outline:visited {
+	color: var(--mp-primary-color);
+	background-color: transparent;
+	border: 1px solid var(--mp-primary-color);
+}
+
+.mp-button-outline:hover,
+.mp-button-outline:focus,
+.mp-button-primary-outline:hover,
+.mp-button-primary-outline:focus {
+	color: var(--mp-primary-dark-color) !important;
+	background-color: var(--mp-primary-color) !important;
+	border-color: var(--mp-primary-color) !important;
+}
+
+.mp-button-secondary-outline,
+.mp-button-secondary-outline:visited {
+	color: var(--mp-secondary-color);
+	background-color: transparent;
+	border-color: var(--mp-secondary-color);
+}
+
+.mp-button-secondary-outline:hover,
+.mp-button-secondary-outline:focus {
+	color: var(--mp-primary-light-color) !important;
+	background-color: var(--mp-secondary-color) !important;
+	border-color: var(--mp-secondary-color) !important;
+}
+
+.mp-button-primary-dark-outline,
+.mp-button-primary-dark-outline:visited {
+	color: var(--mp-primary-dark-color);
+	background-color: transparent;
+	border-color: var(--mp-primary-dark-color);
+}
+
+.mp-button-primary-dark-outline:hover,
+.mp-button-primary-dark-outline:focus {
+	color: var(--mp-secondary-light-color) !important;
+	background-color: var(--mp-primary-dark-color) !important;
+	border-color: var(--mp-primary-dark-color) !important;
+}
+
+.mp-button-primary-light-outline,
+.mp-button-primary-light-outline:visited {
+	color: var(--mp-secondary-light-color);
+	background-color: transparent;
+	border-color: var(--mp-secondary-light-color);
+}
+
+.mp-button-primary-light-outline:hover,
+.mp-button-primary-light-outline:focus {
+	color: var(--mp-secondary-dark-color) !important;
+	background-color: var(--mp-secondary-light-color) !important;
+	border-color: var(--mp-secondary-light-color) !important;
+}

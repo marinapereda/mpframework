@@ -1,0 +1,65 @@
+$colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  tertiary: $color-tertiary,
+  dark-primary: $color-dark-primary,
+  dark-secondary: $color-dark-secondary,
+  light-primary: $color-light-primary,
+  light-secondary: $color-light-secondary
+);
+
+$percentage-steps: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+
+@each $name, $color in $colors {
+  .mp-color-#{$name} {
+    color: $color;
+  }
+
+  .mp-bg-#{$name} {
+    background-color: $color;
+  }
+
+  .mp-border-#{$name} {
+    border-color: $color;
+  }
+
+  @each $step in $percentage-steps {
+    $opacity: $step / 100;
+
+    .mp-color-#{$name}-rgb-#{$step} {
+      color: rgba($color, $opacity);
+    }
+
+    .mp-bg-#{$name}-rgb-#{$step} {
+      background-color: rgba($color, $opacity);
+    }
+
+    .mp-border-#{$name}-rgb-#{$step} {
+      border-color: rgba($color, $opacity);
+    }
+
+    .mp-color-#{$name}-light-#{$step} {
+      color: lighten($color, $step);
+    }
+
+    .mp-bg-#{$name}-light-#{$step} {
+      background-color: lighten($color, $step);
+    }
+
+    .mp-border-#{$name}-light-#{$step} {
+      border-color: lighten($color, $step);
+    }
+
+    .mp-color-#{$name}-dark-#{$step} {
+      color: darken($color, $step);
+    }
+
+    .mp-bg-#{$name}-dark-#{$step} {
+      background-color: darken($color, $step);
+    }
+
+    .mp-border-#{$name}-dark-#{$step} {
+      border-color: darken($color, $step);
+    }
+  }
+}
