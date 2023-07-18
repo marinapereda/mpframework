@@ -1,3 +1,17 @@
+/*** Button Holders ***/
+
+.mp-button-holder {
+	display: inline-block;
+}
+
+.mp-div-center .mp-button-holder {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*** Buttons ***/
+
 .mp-button,
 .mp-button:visited {
 	padding: 6px 18px;
@@ -14,87 +28,86 @@
 	pointer-events: visible;
 	background-color: $color-primary;
 	border: 0;
-	border-radius: 35px;
-	-webkit-border-radius: 35px;
-	-moz-border-radius: 35px;
-	-o-border-radius: 35px;
+	
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
 
 	transition: all .2s ease-out;
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
+
+	/*** Pill ***/
+
+	&.mp-button-pill{
+		padding: 6px 18px;
+
+		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+		-o-border-radius: 35px;
+	}
+
+	/*** Button Sizes ***/
+
+	&.mp-button-sm {
+		padding: 4px 10px;
+		font-size: .8em;
+	}
+
+	&.mp-button-lg {
+		padding: 12px 26px;
+		font-size: 1.2em;
+		font-weight: 600;
+		border-radius: 65px;
+		-webkit-border-radius: 65px;
+		-moz-border-radius: 65px;
+		-o-border-radius: 65px;
+	}
+
+	&.mp-button-xlg{
+		padding: 12px 26px;
+		font-size: 2em;
+		font-weight: 600;
+		border-radius: 65px;
+		-webkit-border-radius: 65px;
+		-moz-border-radius: 65px;
+		-o-border-radius: 65px;
+	}
+
+	/*** Styles ***/
+
+	.mp-button-no-border {
+		border: 0 !important;
+	}
+
+	.mp-link {
+		display: inline-flex;
+		text-decoration: underline;
+	}
+
+	/*** On Hover ***/
+
+	&:hover, &:focus {
+		opacity: .8;
+		transition: all .2s ease-out;
+		-webkit-transition: all .2s ease-out;
+		-moz-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
+	}
 }
 
-.mp-button:hover,
-.mp-button:focus {
-	opacity: .8;
-	transition: all .2s ease-out;
-	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-}
 
-.mp-button-no-border {
-	border: 0 !important;
-}
 
-.mp-inline-link {
-	display: inline-flex;
-	text-decoration: underline;
-}
 
-/*** Button Sizes ***/
 
-.mp-button-sm {
-	padding: 4px 10px;
-	font-size: .8em;
-}
-
-.mp-button-lg {
-	padding: 12px 26px;
-	font-size: 1.2em;
-	font-weight: 600;
-	border-radius: 65px;
-	-webkit-border-radius: 65px;
-	-moz-border-radius: 65px;
-	-o-border-radius: 65px;
-}
-
-.mp-button-xlg{
-	padding: 12px 26px;
-	font-size: 2em;
-	font-weight: 600;
-	border-radius: 65px;
-	-webkit-border-radius: 65px;
-	-moz-border-radius: 65px;
-	-o-border-radius: 65px;
-}
-
-/*** Button Holders ***/
-
-.mp-button-holder {
-	display: inline-block;
-}
-
-.mp-div-center .mp-button-holder {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
 
 /*** Button with Icon ***/
 
 .mp-button i {
 	display: inline-block;
-}
-
-.mp-button-i-right i {
-	margin-left: 6px;
-}
-
-.mp-button-i-left i {
-	margin-left: 0;
-	margin-right: 6px;
 }
 
 .mp-button-icon{
@@ -116,20 +129,109 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.mp-button-icon.mp-button-icon-left{
+	padding: 6px 18px 6px 32px;
+}
+
+.mp-button-icon.mp-button-icon-left::after{
+	right: initial;
+	left: 12px;
+}
+
 .mp-button-icon.mp-button-icon-add::after{
 	content: "\e900";
 }
 
 .mp-button-icon.mp-button-icon-minus::after{
-	content: "\e910";
+	content: "\e912";
 }
 
 .mp-button-icon.mp-button-icon-close::after{
-	content: "\e90a";
+	content: "\e90b";
 }
 
 .mp-button-icon.mp-button-icon-check::after{
+	content: "\e90a";
+}
+
+.mp-button-icon.mp-button-icon-arrow-down::after{
+	content: "\e901";
+}
+
+.mp-button-icon.mp-button-icon-arrow-up::after{
+	content: "\e904";
+}
+
+.mp-button-icon.mp-button-icon-arrow-right::after{
+	content: "\e903";
+}
+
+.mp-button-icon.mp-button-icon-arrow-left::after{
+	content: "\e902";
+}
+
+.mp-button-icon.mp-button-icon-up::after{
+	content: "\e916";
+}
+
+.mp-button-icon.mp-button-icon-down::after{
+	content: "\e90c";
+}
+
+.mp-button-icon.mp-button-icon-next::after{
+	content: "\e913";
+}
+
+.mp-button-icon.mp-button-icon-prev::after{
+	content: "\e914";
+}
+
+.mp-button-icon.mp-button-icon-caret-up::after{
 	content: "\e909";
+}
+
+.mp-button-icon.mp-button-icon-caret-down::after{
+	content: "\e906";
+}
+
+.mp-button-icon.mp-button-icon-caret-next::after{
+	content: "\e908";
+}
+
+.mp-button-icon.mp-button-icon-caret-prev::after{
+	content: "\e907";
+}
+
+.mp-button-icon.mp-button-icon-hamburguer::after{
+	content: "\e90f";
+}
+
+.mp-button-icon.mp-button-icon-search::after{
+	content: "\e915";
+}
+
+.mp-button-icon.mp-button-icon-email::after{
+	content: "\e90d";
+}
+
+.mp-button-icon.mp-button-icon-user::after{
+	content: "\e917";
+}
+
+.mp-button-icon.mp-button-icon-location::after{
+	content: "\e911";
+}
+
+.mp-button-icon.mp-button-icon-link::after{
+	content: "\e910";
+}
+
+.mp-button-icon.mp-button-icon-calendar::after{
+	content: "\e905";
+}
+
+.mp-button-icon.mp-button-icon-exclamation::after{
+	content: "\e90e";
 }
 
 /*** Secondary Color ***/

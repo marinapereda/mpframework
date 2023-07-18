@@ -1,3 +1,21 @@
+// Function to convert a color to RGB
+
+@function convert-to-rgb($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  @return rgb($r, $g, $b);
+}
+
+// Function to convert a color to HSL
+
+@function convert-to-hsl($color) {
+  $h: hue($color);
+  $s: saturation($color);
+  $l: lightness($color);
+  @return hsl($h, $s, $l);
+}
+
 $colors: (
   primary: $color-primary,
   secondary: $color-secondary,
@@ -7,6 +25,26 @@ $colors: (
   light-primary: $color-light-primary,
   light-secondary: $color-light-secondary
 );
+
+// Conversion to RGB
+
+$color-primary-rgb: convert-to-rgb($color-primary);
+$color-secondary-rgb: convert-to-rgb($color-secondary);
+$color-tertiary-rgb: convert-to-rgb($color-tertiary);
+$color-dark-primary-rgb: convert-to-rgb($color-dark-primary);
+$color-dark-secondary-rgb: convert-to-rgb($color-dark-secondary);
+$color-light-primary-rgb: convert-to-rgb($color-light-primary);
+$color-light-secondary-rgb: convert-to-rgb($color-light-secondary);
+
+// Conversion to HSL
+
+$color-primary-hsl: convert-to-hsl($color-primary);
+$color-secondary-hsl: convert-to-hsl($color-secondary);
+$color-tertiary-hsl: convert-to-hsl($color-tertiary);
+$color-dark-primary-hsl: convert-to-hsl($color-dark-primary);
+$color-dark-secondary-hsl: convert-to-hsl($color-dark-secondary);
+$color-light-primary-hsl: convert-to-hsl($color-light-primary);
+$color-light-secondary-hsl: convert-to-hsl($color-light-secondary);
 
 $percentage-steps: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
 
