@@ -16,17 +16,23 @@
     "url": "https://github.com/mowglymx/mpframework/issues"
   },
   "homepage": "https://github.com/mowglymx/mpframework#readme",
-  "dependencies": {
-    "package-name": "^1.0.0"
-  },
   "devDependencies": {
-    "dev-package-name": "^1.0.0"
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^2.0.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "webpack-cli": "^5.1.4"
   },
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
   }
 }

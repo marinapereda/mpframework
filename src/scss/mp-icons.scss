@@ -2,9 +2,9 @@
   font-family: 'mp-icons';
   src: url('../mp-icons/mp-icons.eot?dlxv3o');
   src: url('../mp-icons/mp-icons.eot?dlxv3o#iefix') format('embedded-opentype'),
-    url('../mp-icons/mp-icons.ttf?dlxv3o') format('truetype'),
-    url('../mp-icons/mp-icons.woff?dlxv3o') format('woff'),
-    url('../mp-icons/mp-icons.svg?dlxv3o#mp-icons') format('svg');
+       url('../mp-icons/mp-icons.ttf?dlxv3o') format('truetype'),
+       url('../mp-icons/mp-icons.woff?dlxv3o') format('woff'),
+       url('../mp-icons/mp-icons.svg?dlxv3o#mp-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,6 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'mp-icons' !important;
   speak: never;
   font-style: normal;
