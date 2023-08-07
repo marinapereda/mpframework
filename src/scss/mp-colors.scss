@@ -1,3 +1,12 @@
+// Main Color Variables
+$color-primary: #ff2887;
+$color-secondary: #809BCE;
+$color-tertiary: #AD72B5;
+$color-dark-primary: #11151C;
+$color-dark-secondary: #312F2F;
+$color-light-primary: #ffffff;
+$color-light-secondary: #95B8D1;
+
 // Function to convert a color to RGB
 
 @function convert-to-rgb($color) {

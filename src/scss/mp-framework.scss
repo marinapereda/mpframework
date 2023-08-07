@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use 'mp-colors';
+
 // Main Color Variables
 $color-primary: #ff2887;
 $color-secondary: #809BCE;
@@ -14,13 +16,11 @@ $mp-container-max-width: 1280px;
 $mp-gutter: 20px;
 
 // Imports 
-@import 'mp-colors';
 @import 'mp-grid';
 @import 'mp-margins';
 @import 'mp-alignments';
 @import 'mp-buttons';
 @import 'mp-badge';
-@import 'mp-icons';
 @import 'mp-form';
 @import 'mp-slider';
 
@@ -62,7 +62,7 @@ p:only-of-type {
 }
 
 a {
-	color: $color-primary;
+	color: mp-colors.$color-primary;
 
 	&:hover {
 		transition: all .2s ease-out;
@@ -84,7 +84,6 @@ pre{
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 1em;
 	line-height: 1.15em;
-	white-space-collapse: initial;
 	white-space: pre-line;
 }
 
@@ -92,7 +91,7 @@ code{
 	padding-left: 4px;
 	padding-right: 4px;
 	position: relative;
-	color: rgba($color-dark-primary-rgb, .7);
+	color: rgba(mp-colors.$color-dark-primary-rgb, .7);
 	z-index: 1;
 }
 
@@ -102,7 +101,7 @@ code::before{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba($color-dark-primary-rgb, .08);
+	background-color: rgba(mp-colors.$color-dark-primary-rgb, .08);
 	width: 100%;
 	height: 100%;
 }
@@ -225,7 +224,7 @@ ul.list-bullets li::before {
 	left: 0px;
 	width: 6px;
 	height: 6px;
-	border: 1px solid $color-primary;
+	border: 1px solid  mp-colors.$color-primary;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -254,7 +253,7 @@ ul.list-bullets-inline li:last-of-type {
 ul.list-bullets-with-border li {
 	margin-bottom: 14px;
 	padding-bottom: 12px;
-	border-bottom: 1px dotted $color-light-primary;
+	border-bottom: 1px dotted  mp-colors.$color-light-primary;
 }
 
 ul.list-bullets-with-border li:last-of-type {
@@ -287,7 +286,7 @@ ul.list-separators {
 ul.list-separtors li {
 	margin-bottom: 12px;
 	padding-bottom: 8px;
-	border-bottom: 1px solid $color-dark-secondary;
+	border-bottom: 1px solid  mp-colors.$color-dark-secondary;
 }
 
 ul.list-separtors li:last-of-type {
@@ -351,7 +350,7 @@ img {
 	margin: 20px auto;
 	height: 3px;
 	width: 100%;
-	background-color: $color-dark-primary;
+	background-color:  mp-colors.$color-dark-primary;
 	z-index: 1;
 }
 
@@ -359,7 +358,7 @@ img {
 	margin: 20px auto;
 	height: 3px;
 	width: 100%;
-	background-color: $color-light-secondary;
+	background-color:  mp-colors.$color-light-secondary;
 	z-index: 1;
 }
 
@@ -375,14 +374,14 @@ img {
 	position: absolute;
 	font-size: .9em;
 	line-height: .9em;
-	color: $color-dark-primary;
+	color:  mp-colors.$color-dark-primary;
 	z-index: 9;
-	background-color: $color-light-secondary;
+	background-color:  mp-colors.$color-light-secondary;
 }
 
 .tooltip-element i {
 	display: inline-block;
-	color: $color-dark-primary;
+	color:  mp-colors.$color-dark-primary;
 }
 
 /* Media Queries */

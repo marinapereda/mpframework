@@ -1,3 +1,5 @@
+@use 'mp-colors';
+
 /*** Button Holders ***/
 
 .mp-button-holder {
@@ -23,31 +25,36 @@
 	line-height: 1em;
 	text-align: center;
 	text-decoration: none;
-	color: $color-light-primary;
+	color:  mp-colors.$color-light-primary;
 	cursor: pointer;
 	pointer-events: visible;
-	background-color: $color-primary;
+	background-color:  mp-colors.$color-primary;
 	border: 0;
 	
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-o-border-radius: 8px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
 
 	transition: all .2s ease-out;
 	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
 
-	/*** Pill ***/
+	&.mp-icon-start{
 
-	&.mp-button-pill{
-		padding: 6px 18px;
+		i{
+			margin-right: 8px;
+		}
 
-		border-radius: 35px;
-		-webkit-border-radius: 35px;
-		-moz-border-radius: 35px;
-		-o-border-radius: 35px;
+	}
+
+	&.mp-icon-end{
+
+		i{
+			margin-left: 8px;
+		}
+
 	}
 
 	/*** Button Sizes ***/
@@ -55,26 +62,60 @@
 	&.mp-button-sm {
 		padding: 4px 10px;
 		font-size: .8em;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-o-border-radius: 2px;
 	}
 
 	&.mp-button-lg {
 		padding: 12px 26px;
 		font-size: 1.2em;
 		font-weight: 600;
-		border-radius: 65px;
-		-webkit-border-radius: 65px;
-		-moz-border-radius: 65px;
-		-o-border-radius: 65px;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-o-border-radius: 8px;
 	}
 
 	&.mp-button-xlg{
 		padding: 12px 26px;
 		font-size: 2em;
 		font-weight: 600;
-		border-radius: 65px;
-		-webkit-border-radius: 65px;
-		-moz-border-radius: 65px;
-		-o-border-radius: 65px;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-o-border-radius: 8px;
+	}
+
+	/*** Pill ***/
+
+	&.mp-button-pill{
+		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+		-o-border-radius: 35px;
+
+		&.mp-button-sm {
+			border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			-o-border-radius: 20px;
+		}
+
+		&.mp-button-lg {
+			border-radius: 65px;
+			-webkit-border-radius: 65px;
+			-moz-border-radius: 65px;
+			-o-border-radius: 65px;
+		}
+
+		&.mp-button-xlg{
+			border-radius: 65px;
+			-webkit-border-radius: 65px;
+			-moz-border-radius: 65px;
+			-o-border-radius: 65px;
+		}
 	}
 
 	/*** Styles ***/
@@ -99,249 +140,119 @@
 	}
 }
 
-
-
-
-
-
-/*** Button with Icon ***/
-
-.mp-button i {
-	display: inline-block;
-}
-
-.mp-button-icon{
-	padding: 6px 32px 6px 18px;
-}
-
-.mp-button-icon::after{
-	content: "\e911";
-	position: absolute;
-	top: 6px;
-	right: 12px;
-	font-family: 'mp-icons' !important;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.mp-button-icon.mp-button-icon-left{
-	padding: 6px 18px 6px 32px;
-}
-
-.mp-button-icon.mp-button-icon-left::after{
-	right: initial;
-	left: 12px;
-}
-
-.mp-button-icon.mp-button-icon-add::after{
-	content: "\e900";
-}
-
-.mp-button-icon.mp-button-icon-minus::after{
-	content: "\e912";
-}
-
-.mp-button-icon.mp-button-icon-close::after{
-	content: "\e90b";
-}
-
-.mp-button-icon.mp-button-icon-check::after{
-	content: "\e90a";
-}
-
-.mp-button-icon.mp-button-icon-arrow-down::after{
-	content: "\e901";
-}
-
-.mp-button-icon.mp-button-icon-arrow-up::after{
-	content: "\e904";
-}
-
-.mp-button-icon.mp-button-icon-arrow-right::after{
-	content: "\e903";
-}
-
-.mp-button-icon.mp-button-icon-arrow-left::after{
-	content: "\e902";
-}
-
-.mp-button-icon.mp-button-icon-up::after{
-	content: "\e916";
-}
-
-.mp-button-icon.mp-button-icon-down::after{
-	content: "\e90c";
-}
-
-.mp-button-icon.mp-button-icon-next::after{
-	content: "\e913";
-}
-
-.mp-button-icon.mp-button-icon-prev::after{
-	content: "\e914";
-}
-
-.mp-button-icon.mp-button-icon-caret-up::after{
-	content: "\e909";
-}
-
-.mp-button-icon.mp-button-icon-caret-down::after{
-	content: "\e906";
-}
-
-.mp-button-icon.mp-button-icon-caret-next::after{
-	content: "\e908";
-}
-
-.mp-button-icon.mp-button-icon-caret-prev::after{
-	content: "\e907";
-}
-
-.mp-button-icon.mp-button-icon-hamburguer::after{
-	content: "\e90f";
-}
-
-.mp-button-icon.mp-button-icon-search::after{
-	content: "\e915";
-}
-
-.mp-button-icon.mp-button-icon-email::after{
-	content: "\e90d";
-}
-
-.mp-button-icon.mp-button-icon-user::after{
-	content: "\e917";
-}
-
-.mp-button-icon.mp-button-icon-location::after{
-	content: "\e911";
-}
-
-.mp-button-icon.mp-button-icon-link::after{
-	content: "\e910";
-}
-
-.mp-button-icon.mp-button-icon-calendar::after{
-	content: "\e905";
-}
-
-.mp-button-icon.mp-button-icon-exclamation::after{
-	content: "\e90e";
-}
-
 /*** Secondary Color ***/
 
 .mp-button-secondary,
 .mp-button-secondary:visited {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-color);
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-secondary;
 }
 
 .mp-button-secondary:hover,
 .mp-button-secondary:focus {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-color-hover);
+	opacity: .8;
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-secondary;
 }
 
 /*** Primary Dark Color ***/
 
 .mp-button-primary-dark,
 .mp-button-primary-dark:visited {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-dark-color);
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-dark-secondary;
 }
 
 .mp-button-primary-dark:hover,
 .mp-button-primary-dark:focus {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-dark-color-hover);
+	opacity: .8;
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-dark-secondary;
 }
 
 /*** Secondary Dark Color ***/
 
 .mp-button-secondary-dark,
 .mp-button-secondary-dark:visited {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-dark-color);
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-dark-secondary;
 }
 
 .mp-button-secondary-dark:hover,
 .mp-button-secondary-dark:focus {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-dark-color-hover);
+	opacity: .8;
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-dark-secondary;
 }
 
 /*** Primary Light Color ***/
 
 .mp-button-primary-light,
 .mp-button-primary-light:visited {
-	color: var(--mp-primary-dark-color);
-	background-color: var(--mp-primary-light-color);
+	color: mp-colors.$color-dark-primary;
+	background-color: mp-colors.$color-light-primary;
 }
 
 .mp-button-primary-light:hover,
 .mp-button-primary-light:focus {
-	color: var(--mp-primary-dark-color);
-	background-color: var(--mp-primary-light-color-hover);
+	opacity: .8;
+	color: mp-colors.$color-dark-primary;
+	background-color: mp-colors.$color-light-primary;
 }
 
 /*** Secondary Light Color ***/
 
 .mp-button-secondary-light,
 .mp-button-secondary-light:visited {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-light-color);
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-light-secondary;
 }
 
 .mp-button-secondary-light:hover,
 .mp-button-secondary-light:focus {
-	color: var(--mp-secondary-light-color);
-	background-color: var(--mp-secondary-light-color-hover);
+	opacity: .8;
+	color: mp-colors.$color-light-primary;
+	background-color: mp-colors.$color-light-secondary;
 }
 
 /*** Outline Button ***/
 
 .mp-button-outline {
-	color: var(--mp-primary-color);
+	color: mp-colors.$color-primary;
 	background-color: transparent;
-	border: 1px solid var(--mp-primary-color);
+	border: 1px solid mp-colors.$color-primary;
 }
 
 .mp-button-outline,
 .mp-button-outline:visited,
 .mp-button-primary-outline,
 .mp-button-primary-outline:visited {
-	color: var(--mp-primary-color);
+	color: mp-colors.$color-primary;
 	background-color: transparent;
-	border: 1px solid var(--mp-primary-color);
+	border: 1px solid mp-colors.$color-primary;
 }
 
 .mp-button-outline:hover,
 .mp-button-outline:focus,
 .mp-button-primary-outline:hover,
 .mp-button-primary-outline:focus {
-	color: var(--mp-primary-dark-color) !important;
-	background-color: var(--mp-primary-color) !important;
-	border-color: var(--mp-primary-color) !important;
+	color: mp-colors.$color-dark-primary !important;
+	background-color: mp-colors.$color-primary !important;
+	border-color: mp-colors.$color-primary !important;
 }
 
 .mp-button-secondary-outline,
 .mp-button-secondary-outline:visited {
-	color: var(--mp-secondary-color);
+	color: mp-colors.$color-secondary;
 	background-color: transparent;
-	border-color: var(--mp-secondary-color);
+	border: 1px solid mp-colors.$color-secondary;
 }
 
 .mp-button-secondary-outline:hover,
 .mp-button-secondary-outline:focus {
-	color: var(--mp-primary-light-color) !important;
-	background-color: var(--mp-secondary-color) !important;
-	border-color: var(--mp-secondary-color) !important;
+	color: mp-colors.$color-light-secondary !important;
+	background-color: mp-colors.$color-secondary !important;
+	border-color: mp-colors.$color-secondary !important;
 }
 
 .mp-button-primary-dark-outline,
