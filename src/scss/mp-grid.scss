@@ -354,7 +354,9 @@ body,
 	@media only screen and (max-width: 599px) {
 
 		.mp-container {
-			max-width: 90%;
+			max-width: 96%;
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		.mp-col,
