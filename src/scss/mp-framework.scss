@@ -318,14 +318,6 @@ nav ul li a {
 	text-decoration: none;
 }
 
-/*** Centered margin ***/
-
-
-
-
-
-
-
 /*** MP Images ***/
 
 img {
@@ -382,4 +374,8 @@ img {
 .tooltip-element i {
 	display: inline-block;
 	color:  mp-colors.$color-dark-primary;
+}
+
+.mp-hidden{
+	display: none;
 }
