@@ -2,7 +2,7 @@
 
 // Grid
 $mp-container-max-width: 1280px;
-$mp-gutter: 20px;
+$mp-gutter: 0px;
 
 body,
 .mp-row {
@@ -58,12 +58,14 @@ body,
 [class*=" mp-col-"]:first-of-type,
 [class^="mp-col-"]:first-of-type{
 	margin-left: 0;
+	margin-right: $mp-gutter;
 }
 
 .mp-col:last-of-type,
 [class*=" mp-col-"]:last-of-type,
 [class^="mp-col-"]:last-of-type{
 	margin-right: 0;
+	margin-left: $mp-gutter;
 }
 
 /*** Full Height Container ***/
