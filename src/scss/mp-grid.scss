@@ -54,6 +54,18 @@ body,
 	box-sizing: border-box;
 }
 
+.mp-col:first-of-type,
+[class*=" mp-col-"]:first-of-type,
+[class^="mp-col-"]:first-of-type{
+	margin-left: 0;
+}
+
+.mp-col:last-of-type,
+[class*=" mp-col-"]:last-of-type,
+[class^="mp-col-"]:last-of-type{
+	margin-right: 0;
+}
+
 /*** Full Height Container ***/
 
 .mp-container-full-height {
