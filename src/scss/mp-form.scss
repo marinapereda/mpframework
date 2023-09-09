@@ -98,7 +98,6 @@ input.mp-input-valid {
 .mp-input-group {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: stretch;
 	width: 100%;
 }
@@ -110,3 +109,37 @@ input[type=radio] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+
+
+/*** Media Queries ***/
+
+
+	/*** Extra large devices (large laptops and desktops, 1200px and up) ***/
+
+	@media only screen and (min-width: 1200px) {
+
+	}
+
+
+	/*** Large devices (laptops/desktops, up to 1199px) ***/
+
+	@media (max-width: 1199px){
+
+	}
+
+
+	/*** Medium devices (landscape tablets, up to 991px) ***/
+
+	@media (max-width: 991px) {
+	
+	}
+
+
+	/*** Small devices (portrait tablets and large phones, up to 767px) ***/
+
+	@media (max-width: 767px) {}
+
+
+	/*** Extra small devices (phones, up to 599px) ***/
+
+	@media only screen and (max-width: 599px) {}
