@@ -23,10 +23,12 @@ label {
 }
 
 input,
+input[type=text],
+input[type=email],
 .form-container input,
 .form-container textarea {
 	margin: 0;
-	padding: 10px 10px;
+	padding: 6px 12px;
 	flex: auto;
 	font-size: 1em;
 	line-height: 1em;
@@ -100,6 +102,15 @@ input.mp-input-valid {
 	display: flex;
 	align-items: stretch;
 	width: 100%;
+
+	input[type=text], input[type=email]{
+		+ button{
+			border-radius: 0 6px 6px 0;
+				-webkit-border-radius: 0 6px 6px 0;
+				-moz-border-radius: 0 6px 6px 0;
+				-o-border-radius: 0 6px 6px 0;
+		}
+	}
 }
 
 input[type=checkbox],
