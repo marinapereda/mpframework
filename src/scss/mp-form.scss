@@ -163,6 +163,8 @@ input[type=radio] {
 		/* Input Group */
 		.mp-input-group {
 
+			flex-direction: column;
+
 			input[type=text], input[type=email]{
 				margin-bottom: 12px !important;
 				border-radius: 6px;
