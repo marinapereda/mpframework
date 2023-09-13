@@ -104,6 +104,11 @@ input.mp-input-valid {
 	width: 100%;
 
 	input[type=text], input[type=email]{
+		border-radius: 6px 0 0 6px;
+			-webkit-border-radius: 6px 0 0 6px;
+			-moz-border-radius: 6px 0 0 6px;
+			-o-border-radius: 6px 0 0 6px;
+
 		+ button{
 			border-radius: 0 6px 6px 0;
 				-webkit-border-radius: 0 6px 6px 0;
