@@ -158,4 +158,25 @@ input[type=radio] {
 
 	/*** Extra small devices (phones, up to 599px) ***/
 
-	@media only screen and (max-width: 599px) {}
+	@media only screen and (max-width: 599px) {
+
+		/* Input Group */
+		.mp-input-group {
+
+			input[type=text], input[type=email]{
+				margin-bottom: 12px !important;
+				border-radius: 6px;
+					-webkit-border-radius: 6px;
+					-moz-border-radius: 6px;
+					-o-border-radius: 6px;
+
+				+ button{
+					border-radius: 6px;
+						-webkit-border-radius: 6px;
+						-moz-border-radius: 6px;
+						-o-border-radius: 6px;
+				}
+			}
+		}
+
+	}
