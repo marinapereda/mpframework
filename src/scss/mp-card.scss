@@ -35,6 +35,7 @@
   }
 
   &.mp-card-horizontal {
+    flex-direction: row;
     align-items: start;
     .mp-card-image {
       padding-right: 20px;
