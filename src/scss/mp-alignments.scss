@@ -1,82 +1,94 @@
 .mp-m-h-auto {
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*** Center Div ***/
 
 .mp-div-center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /*** Center Text ***/
 
 .mp-text-center {
-	text-align: center;
+  text-align: center;
 }
 
 /*** Horizontal Alignment for Rows ***/
 
 .mp-row-h-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .mp-row-h-right {
-	justify-content: end;
+  justify-content: end;
 }
 
 .mp-row-h-left {
-	justify-content: start;
+  justify-content: start;
 }
 
 .mp-row-h-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .mp-row-h-around {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 /*** Vertical Alignment for Rows ***/
 
 .mp-row-v-middle {
-	align-items: center;
+  align-items: center;
 }
 
 .mp-row-v-bottom {
-	align-items: end;
+  align-items: end;
 }
 
 .mp-row-v-top {
-	align-items: start;
+  align-items: start;
 }
 
 /*** Horizontal Alignment for Columns ***/
 
 .mp-col-h-center {
-	align-items: center;
+  align-items: center;
 }
 
 .mp-col-h-right {
-	align-items: end;
+  align-items: end;
 }
 
 .mp-col-h-left {
-	align-items: start;
+  align-items: start;
+}
+
+.mp-col-h-end {
+  justify-content: end;
+}
+
+.mp-col-h-start {
+  justify-content: start;
+}
+
+.mp-col-h-center {
+  justify-content: center;
 }
 
 /*** Vertical Alignment for Columns ***/
 
 .mp-col-v-middle {
-	justify-content: center;
+  justify-content: center;
 }
 
 .mp-col-v-bottom {
-	justify-content: end;
+  justify-content: end;
 }
 
 .mp-col-v-top {
-	justify-content: start;
+  justify-content: start;
 }

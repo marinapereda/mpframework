@@ -1,284 +1,281 @@
-@use 'mp-colors';
+@use "mp-colors";
 
 /*** Button Holders ***/
 
 .mp-button-holder {
-	display: inline-block;
+  display: inline-block;
 }
 
 .mp-div-center .mp-button-holder {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /*** Buttons ***/
 
 .mp-button,
 .mp-button:visited {
-	padding: 6px 18px;
-	position: relative;
-	display: inline-flex;
-	align-items: center;
-	font-size: 1em;
-	font-weight: 400;
-	line-height: 1em;
-	text-align: center;
-	text-decoration: none;
-	color:  mp-colors.$color-light-primary;
-	cursor: pointer;
-	pointer-events: visible;
-	background-color:  mp-colors.$color-primary;
-	border: 0;
-	
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-o-border-radius: 6px;
+  padding: 6px 18px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: mp-colors.$color-light-primary;
+  cursor: pointer;
+  pointer-events: visible;
+  background-color: mp-colors.$color-primary;
+  border: 0;
 
-	transition: all .2s ease-out;
-	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
 
-	&.mp-icon-start{
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
 
-		i{
-			margin-right: 8px;
-		}
+  &.mp-icon-start {
+    i {
+      margin-right: 8px;
+    }
+  }
 
-	}
+  &.mp-icon-end {
+    i {
+      margin-left: 8px;
+    }
+  }
 
-	&.mp-icon-end{
+  /*** Button Sizes ***/
 
-		i{
-			margin-left: 8px;
-		}
+  &.mp-button-sm {
+    padding: 4px 10px;
+    font-size: 0.8em;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
 
-	}
+  &.mp-button-lg {
+    padding: 12px 26px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
 
-	/*** Button Sizes ***/
+  &.mp-button-xlg {
+    padding: 12px 26px;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
 
-	&.mp-button-sm {
-		padding: 4px 10px;
-		font-size: .8em;
-		border-radius: 2px;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		-o-border-radius: 2px;
-	}
+  /*** Pill ***/
 
-	&.mp-button-lg {
-		padding: 12px 26px;
-		font-size: 1.2em;
-		font-weight: 600;
-		border-radius: 8px;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		-o-border-radius: 8px;
-	}
+  &.mp-button-pill {
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -o-border-radius: 35px;
 
-	&.mp-button-xlg{
-		padding: 12px 26px;
-		font-size: 2em;
-		font-weight: 600;
-		border-radius: 8px;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		-o-border-radius: 8px;
-	}
+    &.mp-button-sm {
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
 
-	/*** Pill ***/
+    &.mp-button-lg {
+      border-radius: 65px;
+      -webkit-border-radius: 65px;
+      -moz-border-radius: 65px;
+      -o-border-radius: 65px;
+    }
 
-	&.mp-button-pill{
-		border-radius: 35px;
-		-webkit-border-radius: 35px;
-		-moz-border-radius: 35px;
-		-o-border-radius: 35px;
+    &.mp-button-xlg {
+      border-radius: 65px;
+      -webkit-border-radius: 65px;
+      -moz-border-radius: 65px;
+      -o-border-radius: 65px;
+    }
+  }
 
-		&.mp-button-sm {
-			border-radius: 20px;
-			-webkit-border-radius: 20px;
-			-moz-border-radius: 20px;
-			-o-border-radius: 20px;
-		}
+  /*** Styles ***/
 
-		&.mp-button-lg {
-			border-radius: 65px;
-			-webkit-border-radius: 65px;
-			-moz-border-radius: 65px;
-			-o-border-radius: 65px;
-		}
+  .mp-button-no-border {
+    border: 0 !important;
+  }
 
-		&.mp-button-xlg{
-			border-radius: 65px;
-			-webkit-border-radius: 65px;
-			-moz-border-radius: 65px;
-			-o-border-radius: 65px;
-		}
-	}
+  .mp-link {
+    display: inline-flex;
+    text-decoration: underline;
+  }
 
-	/*** Styles ***/
+  /*** On Hover ***/
 
-	.mp-button-no-border {
-		border: 0 !important;
-	}
-
-	.mp-link {
-		display: inline-flex;
-		text-decoration: underline;
-	}
-
-	/*** On Hover ***/
-
-	&:hover, &:focus {
-		opacity: .8;
-		transition: all .2s ease-out;
-		-webkit-transition: all .2s ease-out;
-		-moz-transition: all .2s ease-out;
-		-o-transition: all .2s ease-out;
-	}
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+  }
 }
 
 /*** Secondary Color ***/
 
 .mp-button-secondary,
 .mp-button-secondary:visited {
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-secondary;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-secondary;
 }
 
 .mp-button-secondary:hover,
 .mp-button-secondary:focus {
-	opacity: .8;
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-secondary;
+  opacity: 0.8;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-secondary;
 }
 
 /*** Primary Dark Color ***/
 
 .mp-button-primary-dark,
 .mp-button-primary-dark:visited {
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-dark-secondary;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-dark-secondary;
 }
 
 .mp-button-primary-dark:hover,
 .mp-button-primary-dark:focus {
-	opacity: .8;
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-dark-secondary;
+  opacity: 0.8;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-dark-secondary;
 }
 
 /*** Secondary Dark Color ***/
 
 .mp-button-secondary-dark,
 .mp-button-secondary-dark:visited {
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-dark-secondary;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-dark-secondary;
 }
 
 .mp-button-secondary-dark:hover,
 .mp-button-secondary-dark:focus {
-	opacity: .8;
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-dark-secondary;
+  opacity: 0.8;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-dark-secondary;
 }
 
 /*** Primary Light Color ***/
 
 .mp-button-primary-light,
 .mp-button-primary-light:visited {
-	color: mp-colors.$color-dark-primary;
-	background-color: mp-colors.$color-light-primary;
+  color: mp-colors.$color-dark-primary;
+  background-color: mp-colors.$color-light-primary;
 }
 
 .mp-button-primary-light:hover,
 .mp-button-primary-light:focus {
-	opacity: .8;
-	color: mp-colors.$color-dark-primary;
-	background-color: mp-colors.$color-light-primary;
+  opacity: 0.8;
+  color: mp-colors.$color-dark-primary;
+  background-color: mp-colors.$color-light-primary;
 }
 
 /*** Secondary Light Color ***/
 
 .mp-button-secondary-light,
 .mp-button-secondary-light:visited {
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-light-secondary;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-light-secondary;
 }
 
 .mp-button-secondary-light:hover,
 .mp-button-secondary-light:focus {
-	opacity: .8;
-	color: mp-colors.$color-light-primary;
-	background-color: mp-colors.$color-light-secondary;
+  opacity: 0.8;
+  color: mp-colors.$color-light-primary;
+  background-color: mp-colors.$color-light-secondary;
 }
 
 /*** Outline Button ***/
 
 .mp-button-outline {
-	color: mp-colors.$color-primary;
-	background-color: transparent;
-	border: 1px solid mp-colors.$color-primary;
+  color: mp-colors.$color-primary;
+  background-color: transparent;
+  border: 1px solid mp-colors.$color-primary;
 }
 
 .mp-button-outline,
 .mp-button-outline:visited,
 .mp-button-primary-outline,
 .mp-button-primary-outline:visited {
-	color: mp-colors.$color-primary;
-	background-color: transparent;
-	border: 1px solid mp-colors.$color-primary;
+  color: mp-colors.$color-primary;
+  background-color: transparent;
+  border: 1px solid mp-colors.$color-primary;
 }
 
 .mp-button-outline:hover,
 .mp-button-outline:focus,
 .mp-button-primary-outline:hover,
 .mp-button-primary-outline:focus {
-	color: mp-colors.$color-dark-primary !important;
-	background-color: mp-colors.$color-primary !important;
-	border-color: mp-colors.$color-primary !important;
+  color: mp-colors.$color-dark-primary !important;
+  background-color: mp-colors.$color-primary !important;
+  border-color: mp-colors.$color-primary !important;
 }
 
 .mp-button-secondary-outline,
 .mp-button-secondary-outline:visited {
-	color: mp-colors.$color-secondary;
-	background-color: transparent;
-	border: 1px solid mp-colors.$color-secondary;
+  color: mp-colors.$color-secondary;
+  background-color: transparent;
+  border: 1px solid mp-colors.$color-secondary;
 }
 
 .mp-button-secondary-outline:hover,
 .mp-button-secondary-outline:focus {
-	color: mp-colors.$color-light-secondary !important;
-	background-color: mp-colors.$color-secondary !important;
-	border-color: mp-colors.$color-secondary !important;
+  color: mp-colors.$color-light-secondary !important;
+  background-color: mp-colors.$color-secondary !important;
+  border-color: mp-colors.$color-secondary !important;
 }
 
 .mp-button-primary-dark-outline,
 .mp-button-primary-dark-outline:visited {
-	color: var(--mp-primary-dark-color);
-	background-color: transparent;
-	border-color: var(--mp-primary-dark-color);
+  color: var(--mp-primary-dark-color);
+  background-color: transparent;
+  border-color: var(--mp-primary-dark-color);
 }
 
 .mp-button-primary-dark-outline:hover,
 .mp-button-primary-dark-outline:focus {
-	color: var(--mp-secondary-light-color) !important;
-	background-color: var(--mp-primary-dark-color) !important;
-	border-color: var(--mp-primary-dark-color) !important;
+  color: var(--mp-secondary-light-color) !important;
+  background-color: var(--mp-primary-dark-color) !important;
+  border-color: var(--mp-primary-dark-color) !important;
 }
 
 .mp-button-primary-light-outline,
 .mp-button-primary-light-outline:visited {
-	color: var(--mp-secondary-light-color);
-	background-color: transparent;
-	border-color: var(--mp-secondary-light-color);
+  color: var(--mp-secondary-light-color);
+  background-color: transparent;
+  border-color: var(--mp-secondary-light-color);
 }
 
 .mp-button-primary-light-outline:hover,
 .mp-button-primary-light-outline:focus {
-	color: var(--mp-secondary-dark-color) !important;
-	background-color: var(--mp-secondary-light-color) !important;
-	border-color: var(--mp-secondary-light-color) !important;
+  color: var(--mp-secondary-dark-color) !important;
+  background-color: var(--mp-secondary-light-color) !important;
+  border-color: var(--mp-secondary-light-color) !important;
 }
